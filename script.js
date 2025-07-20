@@ -42,3 +42,10 @@ function NumberFinder (number){
 };
 
 NumberFinder(7);
+
+
+function CheckifEvenorOdd (num){
+    return num % 2 === 0 ? "Even" : "Odd"
+};
+
+console.log(CheckifEvenorOdd(4));
