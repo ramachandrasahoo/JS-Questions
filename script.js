@@ -14,19 +14,31 @@
 // sum(8,0);
 
 // 3 write a function that calculates and prints the area of a rectangle given its length and width
-function area (length,width){
-    if(length <= 0){
-        throw new RangeError("Length should be a positive number.");   
-    }
-    if (width <= 0) {
-        throw new RangeError("Width should be a positive number.")
+// function area (length,width){
+//     if(length <= 0){
+//         throw new RangeError("Length should be a positive number.");   
+//     }
+//     if (width <= 0) {
+//         throw new RangeError("Width should be a positive number.")
+//     }
+//     else{
+//     let area = length * width;
+//     console.log(`Area of the rectangle is ${area}`);};
+// };
+
+// area(2,3);
+// area(2,3.3);
+// area(2.5,3.6);
+// area(2,0);
+
+// 4 write a function that tells if a number is even or odd
+function NumberFinder (number){
+    if (number % 2 == 0){
+        console.log(`${number} is an even number.`);
     }
     else{
-    let area = length * width;
-    console.log(`Area of the rectangle is ${area}`);};
+        console.log(`${number} is an odd number.`);
+    }
 };
 
-area(2,3);
-area(2,3.3);
-area(2.5,3.6);
-area(2,0);
+NumberFinder(7);
