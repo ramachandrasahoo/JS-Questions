@@ -9,5 +9,8 @@ function sum (a,b){
 sum(-2,-3);
 sum(-2,5);
 sum(8,5);
+sum(8.2,7);
+sum(9.5,5.2);
+sum(8,0);
 
 // 3 
