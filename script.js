@@ -16,10 +16,10 @@
 // 3 write a function that calculates and prints the area of a rectangle given its length and width
 function area (length,width){
     if(length <= 0){
-        throw new Error("Length should be a positive number.");   
+        throw new RangeError("Length should be a positive number.");   
     }
     if (width <= 0) {
-        throw new Error("Width should be a positive number.")
+        throw new RangeError("Width should be a positive number.")
     }
     else{
     let area = length * width;
