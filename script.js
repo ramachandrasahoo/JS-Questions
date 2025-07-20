@@ -43,9 +43,11 @@ function NumberFinder (number){
 
 NumberFinder(7);
 
-
+//  Alternate 
 function CheckifEvenorOdd (num){
     return num % 2 === 0 ? "Even" : "Odd"
 };
 
 console.log(CheckifEvenorOdd(4));
+
+// 5 Write a function that finds and prints the smallest number among three given numbers
