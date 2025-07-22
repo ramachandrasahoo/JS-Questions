@@ -50,35 +50,52 @@
 // console.log(CheckifEvenorOdd(4));
 
 // 5 Write a function that finds and prints the smallest number among three given numbers
-function SmallestNum(a, b, c) {
-    return Math.min(a, b, c);
-}
-
-let SmallestNumber = SmallestNum(-45, -3.4, -8.4);
-console.log(SmallestNumber);
+// function SmallestNum(a, b, c) {
+//     return Math.min(a, b, c);
+// }
+// let SmallestNumber = SmallestNum(-45, -3.4, -8.4);
+// console.log(SmallestNumber);
 // Alternate
-function findsmall(a,b,c) {
-    if(a<=b && a<=c){
-        console.log(`${a} is the smallest`)
-    }
-    else if (b<=a && b<=c) {
-        console.log(`${b} is the smallest`)
-    } else {
-        console.log(`${c} is the smallest`)
-    }
+// function findsmall(a,b,c) {
+//     if(a<=b && a<=c){
+//         console.log(`${a} is the smallest`)
+//     }
+//     else if (b<=a && b<=c) {
+//         console.log(`${b} is the smallest`)
+//     } else {
+//         console.log(`${c} is the smallest`)
+//     }
+// }
+
+// findsmall(6,1,6);
+// // alternate
+// function findsmalln(a,b,c) {
+//     if(a<b && a<c){
+//         return a;
+//     }
+//     else if (b<a && b<c) {
+//         return b;
+//     } else if (c<a && c<b) {
+//         return c;
+//     }
+//     return a;
+// }
+
+// console.log("smallest is the" , findsmalln(6,9,6));
+
+// 6 write a function that returns the reverse of a string 
+function stringreverse(str) {
+    return str.split("").reverse().join("");
 }
 
-findsmall(6,-6,7);
+console.log(stringreverse("devloper"));
 
-function findsmalln(a,b,c) {
-    if(a<b && a<c){
-        console.log(`${a} is the smallest`)
+function reversestr(str) {
+    let result = "";
+    for(i=str.length - 1; i>=0; i--) {
+            result = result + str[i];
     }
-    else if (b<a && b<c) {
-        console.log(`${b} is the smallest`)
-    } else if (c<a && c<b) {
-        console.log(`${c} is the smallest`)
-    }
+    return result;
 }
 
-findsmalln(5,6,7);
+console.log(reversestr("mernstack"));
