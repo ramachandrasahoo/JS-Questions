@@ -91,6 +91,9 @@ function stringreverse(str) {
 console.log(stringreverse("devloper"));
 
 function reversestr(str) {
+    if(typeof str !== "string"){
+        throw new Error("only enter strings");
+    }
     let result = "";
     for(i=str.length - 1; i>=0; i--) {
             result = result + str[i];
@@ -99,3 +102,7 @@ function reversestr(str) {
 }
 
 console.log(reversestr("mernstack"));
+console.log(reversestr("software devloper"));
+console.log(reversestr(85776));
+
+
