@@ -148,3 +148,16 @@
 // }
 
 // console.log(calculatethesumofdigits(98691));
+
+// write a function that generates and prints a multiplication table for a given number upto a specified Range
+
+function printMultiplicationTable(Tableof, TableTill) {
+    if (typeof Tableof !== "number" || typeof TableTill !== "number" ) {
+        throw new Error("Enter a number ")
+    }
+    for (i = 1; i <= TableTill; i++) {
+        console.log(`${Tableof} * ${i} = ${Tableof * i}`);
+    }
+}
+
+printMultiplicationTable(3,6);
