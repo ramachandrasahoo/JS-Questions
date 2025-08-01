@@ -84,25 +84,67 @@
 // console.log("smallest is the" , findsmalln(6,9,6));
 
 // 6 write a function that returns the reverse of a string 
-function stringreverse(str) {
-    return str.split("").reverse().join("");
-}
+// function stringreverse(str) {
+//     return str.split("").reverse().join("");
+// }
 
-console.log(stringreverse("devloper"));
+// console.log(stringreverse("devloper"));
 
-function reversestr(str) {
-    if(typeof str !== "string"){
-        throw new Error("only enter strings");
-    }
-    let result = "";
-    for(i=str.length - 1; i>=0; i--) {
-            result = result + str[i];
-    }
-    return result;
-}
+// function reversestr(str) {
+//     if(typeof str !== "string"){
+//         throw new Error("only enter strings");
+//     }
+//     let result = "";
+//     for(i=str.length - 1; i>=0; i--) {
+//             result = result + str[i];
+//     }
+//     return result;
+// }
 
-console.log(reversestr("mernstack"));
-console.log(reversestr("software devloper"));
-console.log(reversestr(85776));
+// console.log(reversestr("mernstack"));
+// console.log(reversestr("software devloper"));
+// console.log(reversestr(85776));
 
 
+// write a functio that calculate the factoral of numbers 
+
+// function factorial(n) {
+//     if (n < 0) {
+//         throw new Error("n should be a positive number");
+//     }
+//         let result = 1;
+//     for (i = 1; i <= n; i++) {
+//             result *= i;
+//     }
+//     return result;
+// }
+
+// console.log(factorial(-20));
+
+// is it a leap year 
+
+// function leapyear(n) {
+//     if ((n % 4 === 0 && n % 100 !== 0) || (n%400 === 0)){
+//         console.log(`${n} ia a leap year`);
+//     }
+//     else {console.log(`${n} is not a leap year`);
+// }
+// }
+// leapyear(4);
+
+// write a function that calculates and returns sum of digits
+
+// function calculatethesumofdigits(digit) {
+//     if (digit < 1) {
+//         throw new Error("digit shouldd be greater than 1")
+//     }
+//     let string = digit.toString();
+//     let arr = Array.from(string);
+//     let result = 0;
+//     arr.forEach(function(val){
+//         result += parseInt(val)
+//     })
+//     return result;
+// }
+
+// console.log(calculatethesumofdigits(98691));
